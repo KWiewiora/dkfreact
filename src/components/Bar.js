@@ -1,7 +1,5 @@
 import React from 'react';
-import Menu from './menu/Menu.js';
-import {BrowserRouter as Router,Link} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 import Home from '../Home.js';
 
@@ -10,26 +8,14 @@ const Bar = () => {
 		<div id="bar">
 			<nav>
 				<Router>
-					<Menu 
-						text = "KINO"
-					/>
-					<Menu 
-						text = "REPERTUAR"
-						link = "repertuar"
-						classes = "orange-text"
-					/>
-					<Menu 
-						text = "BLOG"
-						link = "blog"
-					/>
-					<Menu 
-						text = "O NAS"
-						link = "o-nas"
-					/>
-					<Menu 
-						text = "KONTAKT"
-						link = "kontakt"
-					/>
+					<Link to = "/">KINO</Link>
+					<Link to = "/repertuar" className = "orange-text">REPERTUAR</Link>
+					<Link to = "/blog">BLOG</Link>
+					<Link to = "/o-nas">O NAS</Link>
+					<Link to = "/kontakt">KONTAKT</Link>
+                    <div className = "hidden">
+                      <Route exact path="/" component={Home} />
+                    </div>
 				</Router>
 			</nav>
 			<h4 className="logo">DKF Politechnika</h4>
