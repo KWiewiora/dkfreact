@@ -1,7 +1,7 @@
 import React from 'react';
 import "../index.css";
 import logo from "./dkf_logo.png";
-import * as firebase from 'firebase';
+import firebase from '@firebase/app';
 import {dbconfig} from '../dbconfig';
 
 

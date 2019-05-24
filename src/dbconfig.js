@@ -1,6 +1,3 @@
-import Rebase from 're-base';
-import firebase from 'firebase';
-
 const dbconfig = {
     apiKey: process.env.REACT_APP_FIREBASE_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
