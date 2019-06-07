@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Home from './Home.js';
 import Header from './components/Header.js';
 import Bar from './components/Bar.js';
+import Socials from './components/Socials.js';
+import Footer from './components/Footer.js';
+
 import * as serviceWorker from './serviceWorker';
+import Rebase from 're-base';
+import firebase from 'firebase';
+
 
 class DKF extends React.Component {
 	render() {
@@ -12,7 +17,7 @@ class DKF extends React.Component {
 			<div className="DKF">
 				<Header></Header>
 				<Bar></Bar>
-				<Home></Home>
+                <Footer></Footer>
 			</div>
 		)
 	}
